@@ -1,4 +1,7 @@
 {
+  "permissions": {
+    "allow": ["mcp__remote-devices__device_request_folder_access"]
+  },
   "hooks": {
     "SessionStart": [
       {
@@ -8,12 +11,6 @@
             "type": "command",
             "command": "bash \"$CLAUDE_PROJECT_DIR/hooks/add-to-path.sh\" \"$CLAUDE_PROJECT_DIR\""
           }
-          {
-  "permissions": {
-    "allow": ["mcp__remote-devices__device_request_folder_access"]
-  },
-  "hooks": { ...leave as is... }
-}
         ]
       }
     ]
